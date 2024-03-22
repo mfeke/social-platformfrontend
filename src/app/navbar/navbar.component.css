@@ -1,0 +1,31 @@
+.w-90{
+    width: 340px;
+}
+.po{
+    position: absolute;
+    top: -20px;
+    left: 152px;
+}
+.fixed-bottom mat-icon{
+    font-size: 30px;
+}
+.m{
+    background-color: black;
+    color: white;
+    border-radius: 100%;
+    font-size: 300px;
+
+}
+
+.pos{
+    position:relative;
+    top: -25px;
+  
+}
+.br{
+ border-radius: 100%;
+}
+.h-20{
+    height: 50px;
+    padding-top: 10px;
+}

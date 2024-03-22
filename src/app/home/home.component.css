@@ -1,0 +1,76 @@
+.story-container {
+    display: flex;
+    overflow-x: auto; /* Allow horizontal scrolling */
+    padding: 10px;
+    gap: 10px; /* Gap between story items */
+    border: 1px solid #ccc; /* Optional border for visualization */
+}
+
+.story {
+    flex: 0 0 auto;
+ 
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    overflow: hidden;
+}
+
+.story img {
+    width: 100px;
+    height: 110px;
+}
+.border{
+    border: 1px;
+}
+.file-input-label {
+    display: inline-block;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    width: 170px;
+    text-align: center;
+  }
+  
+  .file-input-label:hover {
+    background-color: #0056b3;
+  }
+  
+  .file-input-label .material-icons {
+    vertical-align: middle;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  
+  /* Hide the file input */
+  input[type="file"] {
+    position: absolute;
+    left: -9999px;
+}
+
+.profile-post{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+b , .time, .location{
+    font-size: 14px;
+}
+.h-40{
+    height: 250px;
+    border-radius: 10px;
+}
+.posi{
+    position: relative;
+    left: 310px;
+    top: 115px;
+}
+p{
+    font-size: 14px;
+}
+.img-o{
+    width: 30px;
+    height: 30px;
+}

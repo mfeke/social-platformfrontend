@@ -1,0 +1,19 @@
+
+.example-container mat-form-field + mat-form-field {
+  margin-left: 8px;
+}
+.example-full-width{
+  width: 100% ;
+}
+.mx{
+  margin-right: 10px;
+}
+.font{
+  font-size: 20px;
+}
+img{
+  width: 100px;
+}
+.mt{
+  margin-top: 3px;
+}

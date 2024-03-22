@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class PostComponent {
 
+  selectedIconColor: string = 'gray'; // Initial color
+
+  // Function to handle icon color toggle
+  toggleIconColor() {
+    this.selectedIconColor = this.selectedIconColor === 'gray' ? 'red' : 'gray';
+  }
+
 }

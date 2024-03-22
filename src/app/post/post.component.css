@@ -1,0 +1,62 @@
+.h-30{
+    height: 280px;
+    border-bottom-left-radius:20px ;
+    border-bottom-right-radius: 20px;
+
+}
+.br{
+    border-radius: 8px;
+}
+.p{
+    padding-top: 2px;
+}
+.bor{
+    border-radius: 100%;
+}
+
+.profile-post{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.text-container {
+    display: -webkit-box; /* Set display to flex for WebKit-based browsers */
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 3.6em; /* Adjust based on line height */
+  }
+  
+  .see-more {
+    display: none; /* Initially hide the "See more" link */
+  }
+  
+  .text-container:hover .see-more {
+    display: inline; /* Display the "See more" link on hover */
+  }
+  .profile-commit{
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+  }
+
+  ::placeholder{
+    font-size: 14px;
+  }
+
+  .position{
+    position: absolute;
+    top: 5px;
+    right: 0px;
+  }
+ .mx-{
+    margin-bottom: 100px;
+ }
+
+ .pb-0{
+    padding-bottom: 70px !important ;
+ }

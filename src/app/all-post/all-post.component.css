@@ -1,0 +1,58 @@
+.img{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+}
+.img-0{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    -webkit-user-drag: element;
+    user-select: none;
+    width: 70%;
+    height: 40% !important;
+}
+.one{
+    margin-top: 2px;
+    font-size: 15px;
+}
+.image-container {
+    margin-left: 50px;
+    height: auto; /* This will maintain aspect ratio */
+    overflow: hidden; /* Hide overflow if image is larger */
+  }
+  .title{
+    font-size: 15px;
+    width: 450px;
+  }
+  .image-container img ,.w-60 {
+   
+    width: 100%; 
+    width: 430px;
+    max-height: 450px;
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any default spacing */
+    border-radius: 10px 10px 10px;
+  }
+  .ellipsis-container {
+    width: 400px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    cursor: pointer; /* Show pointer on hover */
+  }
+  
+  .ellipsis {
+    font-weight: bold;
+    color: blue; /* Change ellipsis color */
+    cursor: pointer; /* Show pointer on hover */
+  }
+.text{
+    overflow:auto;
+    text-overflow: initial;
+    white-space:wrap;
+}
+
+  .main-chat {
+    overflow: auto;
+}

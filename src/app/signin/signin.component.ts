@@ -4,6 +4,8 @@ import {FormControl,FormGroupDirective, NgForm, Validators,FormsModule, Reactive
 import {ErrorStateMatcher} from '@angular/material/core';
 import {MatSnackBar} from '@angular/material/snack-bar';
 import {MatInputModule} from '@angular/material/input';
+import { TokenService } from '../service/token.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -12,23 +14,25 @@ import {MatInputModule} from '@angular/material/input';
 })
 export class SigninComponent {
   hide = true;
- 
-  
+
   emailFormControl = new FormControl('', [Validators.required, Validators.email]);
   passwordFormControl = new FormControl('', [Validators.required,]);
 
-  constructor(private _snackBar: MatSnackBar ,private authService: UserService) {}
+  constructor(private _snackBar: MatSnackBar ,private authService: UserService,private tokenService:TokenService,private router: Router) {}
 
   matcher = new ErrorStateMatcher();
   signup(){
     this.authService.login(this.emailFormControl.value,this.passwordFormControl.value).subscribe({
-      next:data=>{
-        this._snackBar.open("Login Successful", 'X', {
+      next:async data=>{
+        let user: any = {}
+        user = data
+        this.tokenService.saveToken(user.accessToken)        
+        this._snackBar.open("Login Successful", 'Okay', {
           duration: 3000
         });
+        this.router.navigate(['/home'])
       }
     })
-   
   }
 
 }

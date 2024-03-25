@@ -1,0 +1,21 @@
+<div class="container-w h-100 d-flex text-center">
+    <div class="container w-50">
+        <h1>OTP Verification</h1>
+        <p class="text-secondary">Enter the verification code we to </p>
+
+        <p class="text-dark mt-4 mb-5">mfekethothulane&#64;gmail.com</p>
+
+        <p class="text-start ty text-secondary mt-3">Type 4 digit security code</p>
+        <div class="container">
+            <div class="">
+                <div id="inputs" class="inputs">
+                    <input #input1 class="input" type="text" inputmode="numeric" maxlength="1" (input)="focusNext(input2)" (keydown)="handleBackspace($event, null)" />
+                    <input #input2 class="input" type="text" inputmode="numeric" maxlength="1" (input)="focusNext(input3)" (keydown)="handleBackspace($event, input1)" />
+                    <input #input3 class="input" type="text" inputmode="numeric" maxlength="1" (input)="focusNext(input4)" (keydown)="handleBackspace($event, input2)"  />
+                    <input #input4 class="input" type="text" inputmode="numeric" maxlength="1"  (keydown)="handleBackspace($event, input3)" />
+                </div>
+            </div>
+        </div>
+        <button type="button" class="btn bg-dark mt-5 w-50 p-3 text-white" (click)="updateDigits()">Next</button>
+    </div>
+</div>

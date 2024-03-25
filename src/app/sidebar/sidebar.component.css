@@ -1,0 +1,50 @@
+input{
+    width: 250px;
+    border-radius: 20px;
+}
+::placeholder{
+    padding-left: 10px;
+}
+.br{
+    border-radius: 100%;
+}
+.w{
+    width: 400px;
+}
+b{
+    font-size: 20px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+}
+img{
+    width: 50px;
+    border-radius: 100%;
+}
+.p{
+    font-size: 13px;
+}
+button{
+    width: 120px;
+    height: 40px !important;
+    border-radius: 5px;
+
+}
+.mx{
+    margin-left: 50px;
+
+}
+.bg{
+    background-color: rgb(235, 235, 235);
+    border-radius: 5px;
+}
+.w-60{
+    width: 450px;
+}
+.po{
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+
+}

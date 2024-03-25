@@ -17,3 +17,7 @@
   .mt{
     margin-top: 3px;
   }
+
+  mat-spinner{
+    color: gray;
+  }

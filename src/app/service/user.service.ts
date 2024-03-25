@@ -21,4 +21,8 @@ export class UserService {
 
     
   }
+  createBook(item:any):Observable<any>{
+    return this.http.post<any>(`${this.api}post/create`,item)
+  
+    }
 }

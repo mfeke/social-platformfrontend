@@ -1,0 +1,36 @@
+<!-- <div class="container pt-3 w-10 d-flex justify-content-between">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi mt-1 bi-arrow-left" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+      </svg>
+      <button class="btn bg-secondary text-white px-4" (click)="addPost()">
+        Post
+      </button>
+</div> -->
+<div class="img-profile-container container d-flex "  [formGroup]="postForm">
+    <img src="https://i.postimg.cc/bwKQ3znM/download01.jpg" class="img-profile" alt="">
+    <textarea name="" id="" cols="30" rows="10" formControlName="text" placeholder="What's on your mind?!" class="mx-3 w-100 mb-3"></textarea>
+</div>
+<div class="container d-flex justify-content-end mb-2" *ngIf="imageUrl">
+  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi p-1 mt-2 rbg bi-x-lg" (click)="clear()" viewBox="0 0 16 16">
+    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+  </svg>
+  <img src="{{imageUrl}}" alt="">
+</div>
+<div class="d-flex container mb-2 justify-content-between ">
+  <div class="container d-flex text-secondary">
+    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" viewBox="0 0 36 36" (click)="fileInput.click()">
+      <path fill="currentColor" d="M32 4H4a2 2 0 0 0-2 2v24a2 2 0 0 0 2 2h28a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2M4 30V6h28v24Z" class="clr-i-outline clr-i-outline-path-1"/><path fill="currentColor" d="M8.92 14a3 3 0 1 0-3-3a3 3 0 0 0 3 3m0-4.6A1.6 1.6 0 1 1 7.33 11a1.6 1.6 0 0 1 1.59-1.59Z" class="clr-i-outline clr-i-outline-path-2"/><path fill="currentColor" d="m22.78 15.37l-5.4 5.4l-4-4a1 1 0 0 0-1.41 0L5.92 22.9v2.83l6.79-6.79L16 22.18l-3.75 3.75H15l8.45-8.45L30 24v-2.82l-5.81-5.81a1 1 0 0 0-1.41 0" class="clr-i-outline clr-i-outline-path-3"/><path fill="none" d="M0 0h36v36H0z"/>
+    </svg>
+    <input #fileInput type="file" style="display: none" (change)="onFileSelected($event)">
+   <div class="d-flex">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" class="bi mx-2 bi-geo-alt" viewBox="0 0 16 16">
+      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10"/>
+      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6"/>
+    </svg>
+    <p>{{location?.city}}</p>
+   </div>
+  </div>
+  <button class="btn bg-dark text-white px-4" (click)="addPost()">
+    Post
+  </button>
+</div>

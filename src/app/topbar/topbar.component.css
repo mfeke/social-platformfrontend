@@ -1,20 +1,20 @@
-img{
-   width: 110px;
-   height: 80px;
+img, .bg{
+   width: 100px;
+   height: 120px;
    border-radius: 9px;
-   mix-blend-mode:darken;
+}
+.pt{
+   margin: 40px;
 }
 .w-10{
    width: 70px;
 }
-.width{
-   max-width: fit-content;
-   overflow: scroll;
-}
-p{
 
+p{
+cursor: pointer;
    font-size: 10px;
 }
+
 .img-pro{
    width: 28px;
    height: 28px;

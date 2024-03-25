@@ -1,31 +1,21 @@
-.w-90{
-    width: 340px;
-}
-.po{
-    position: absolute;
-    top: -20px;
-    left: 152px;
-}
-.fixed-bottom mat-icon{
-    font-size: 30px;
-}
-.m{
-    background-color: black;
-    color: white;
-    border-radius: 100%;
-    font-size: 300px;
 
+img{
+    width: 120px;
+    height: 120px;
+    border-radius: 100%; 
 }
 
-.pos{
-    position:relative;
-    top: -25px;
-  
+p{
+    font-size: 14px;
 }
-.br{
- border-radius: 100%;
+.w{
+    width: 320px;
 }
-.h-20{
-    height: 50px;
-    padding-top: 10px;
+b{
+    font-size: 20px;
+}
+hr {
+    text-align: center;
+    border-top:3px dotted #000;
+    /*Rest of stuff here*/
 }

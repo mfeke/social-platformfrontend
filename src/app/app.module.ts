@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule,ReactiveFormsModule } from '@angular/forms'; // <-- NgModel lives here
+import { FormsModule,ReactiveFormsModule } from '@angular/forms'; 
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { MatInputModule } from '@angular/material/input';
@@ -7,6 +7,9 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import {MatTabsModule} from '@angular/material/tabs';
+import {MatSelectModule} from '@angular/material/select';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatCardModule} from '@angular/material/card';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -18,6 +21,10 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { PostComponent } from './post/post.component';
+import { AddPostComponent } from './add-post/add-post.component';
+import { OptPageComponent } from './opt-page/opt-page.component';
+import { AllPostComponent } from './all-post/all-post.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +34,11 @@ import { PostComponent } from './post/post.component';
     HomeComponent,
     SigninComponent,
     SignupComponent,
-    PostComponent
+    PostComponent,
+    AddPostComponent,
+    OptPageComponent,
+    AllPostComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +50,10 @@ import { PostComponent } from './post/post.component';
     MatFormFieldModule,
     MatIconModule,
     MatTabsModule,
+    MatSelectModule,
+    MatProgressSpinnerModule,
+    MatCardModule,
+    
     AppRoutingModule
   ],
   providers: [

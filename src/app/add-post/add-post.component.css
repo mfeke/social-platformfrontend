@@ -1,0 +1,35 @@
+button{
+    font-size: 13px;
+    border-radius: 20px;
+}
+
+.img-profile{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%; 
+}
+textarea{
+    height: 90px;
+    border: none;
+}
+textarea:focus {
+    outline: none !important;
+}
+
+::placeholder{
+    font-size: 20px;
+    color: #000;
+
+}
+.rbg{
+    position: relative;
+    left: 290px;
+    color: white;
+    border-radius: 100%;
+    background-color: rgb(0, 0,0,0.3);
+}
+
+img{
+    width: 300px;
+    border-radius: 10px;
+}

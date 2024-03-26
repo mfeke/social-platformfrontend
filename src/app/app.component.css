@@ -1,0 +1,15 @@
+.fixed-column {
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+  }
+  /* Adjusting padding for content */
+  .content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pl{
+    padding-left: 0px;
+  }
+
+  

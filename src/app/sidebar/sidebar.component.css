@@ -1,5 +1,5 @@
 input{
-    width: 250px;
+    width: 295px;
     border-radius: 20px;
 }
 ::placeholder{
@@ -29,6 +29,7 @@ button{
     width: 120px;
     height: 40px !important;
     border-radius: 5px;
+    font-size: 14px;
 
 }
 .mx{
@@ -47,4 +48,9 @@ button{
     width: 100px;
     height: 100px;
 
+}
+
+p{
+    font-size: 13px;
+    font-weight: 500;
 }

@@ -8,7 +8,7 @@ import { AddPostComponent } from './add-post/add-post.component';
 import { OptPageComponent } from './opt-page/opt-page.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/signin', pathMatch: 'full' },
+  // { path: '', redirectTo: '/signin', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'signin', component: SigninComponent },

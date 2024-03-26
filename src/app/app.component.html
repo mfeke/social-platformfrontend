@@ -1,2 +1,14 @@
-<!-- <app-topbar></app-topbar> -->
-<router-outlet></router-outlet>
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Left Column -->
+    <div class="col-sm-3 pl fixed-column" style="left: 0;">
+      <!-- Content for Left Column -->
+      <app-navbar></app-navbar>
+    </div>
+    
+    <!-- Middle Column -->
+    <router-outlet></router-outlet>
+  </div>
+</div>
+

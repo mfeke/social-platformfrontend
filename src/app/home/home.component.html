@@ -1,29 +1,28 @@
-<div class="d-flex mb-3">
-    <app-navbar></app-navbar>
-    <div class="p-2">
-        <app-topbar></app-topbar>
-        <div class="container px-4  ">
-            <div class="row">
-                <div class="col-6 d-flex justify-content-center bg-light p-2">
-                    <b>Home</b>
+<div class="row">
+    <div class="col-sm-6 offset-sm-3 content ">
+        <!-- Content for Middle Column -->
+        <div class="border">
+            <app-topbar></app-topbar>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 d-flex justify-content-center bg-light p-2">
+                        <b>Home</b>
+                    </div>
+                    <div class="col-6 d-flex justify-content-center">
+                        <b>For you</b>
+                    </div>
+                    <hr>
                 </div>
-                <div class="col-6 d-flex justify-content-center">
-                    <b>For you</b>
-                </div>
-                <hr>
             </div>
             <app-add-post></app-add-post>
             <hr>
             <app-all-post></app-all-post>
         </div>
-
-    </div>
-    <div class="p-2">
+      </div>
+      
+      <!-- Right Column -->
+      <div class="col-sm-3 fixed-column" style="right: 0;">
+        <!-- Content for Right Column -->
         <app-sidebar></app-sidebar>
-    </div>
+      </div>
 </div>
-    <!-- <div class="container p-3 pb-1  mb-2 d-flex justify-content-between">
-    <img src="https://i.postimg.cc/rsbM8ML0/stock-vector-abstract-people-symbol-togetherness-and-community-concept-design-creative-hub-social-co.jpg"
-        class="img-o" alt="">
-    <mat-icon aria-hidden="false" class="text-secondary" aria-label="Example search icon" fontIcon="search"></mat-icon>
-</div> -->
